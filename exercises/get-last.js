@@ -8,7 +8,13 @@
  */
 
 // Your code :
-
+function getLast(liste){
+    let longueur;
+    let last;
+	longueur = liste.length - 1;
+	last = liste[longueur];
+	return last;
+}
 //* Begin of tests
 const assert = require('assert')
 

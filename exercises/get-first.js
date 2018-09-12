@@ -8,6 +8,13 @@
  */
 
 // Your code :
+function getFirst(liste){
+	
+	for(let i=0;i < liste.lenght; i++){	
+
+	}
+	return liste[0];
+}
 
 //* Begin of tests
 const assert = require('assert')
