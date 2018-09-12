@@ -9,6 +9,22 @@
  */
 
 // Your code :
+function multiply(nombre,multiplicateur){
+	let i = 0;
+	let resultat = 0;
+	if(multiplicateur > 0){
+		while(i < multiplicateur){
+			resultat = resultat + nombre;
+			i++;
+		}
+	}else if(multiplicateur < 0){
+		while(i > multiplicateur){
+			resultat = resultat - nombre;
+			i--;
+		}
+	}
+	return resultat;
+}
 
 //* Begin of tests
 const assert = require('assert')
