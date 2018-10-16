@@ -10,6 +10,35 @@
  */
 
 // Your code :
+function multiply(nb1,nb2){
+
+	let sum = 0
+	let negativeResult = false
+
+	if (nb1 < 0) {
+		nb1 = -nb1
+		negativeResult = true
+	}
+		
+	if (nb1 == 0 || nb2 == 0) {
+		return sum
+	}
+	
+	else if (nb1 == 1){
+		return nb2
+	}
+	
+	else {
+		sum += multiply(nb1-1, nb2) + nb2
+	
+		if (negativeResult== true) {
+			return -sum
+		}
+		else {
+			return sum
+		}
+	}
+}
 
 //* Begin of tests
 const assert = require('assert')
